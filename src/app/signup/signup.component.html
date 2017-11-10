@@ -1,0 +1,27 @@
+<h2>Signup Form</h2>
+
+<form style="border:1px solid #ccc">
+  <div class="container">
+  
+   <label><b>Name</b></label>
+    <input type="text" name="username" [(ngModel)]="userInput.username" placeholder="Enter Your Name" id="Name" required>
+   
+    <label><b>Email</b></label>
+    <input type="text" name="email" [(ngModel)]="userInput.email" placeholder="Enter Email" id="Email" required>
+
+    <label><b>Password</b></label>
+    <input type="password" name="password" [(ngModel)]="userInput.password" placeholder="Enter Password" id="psw" required>
+
+    <label><b>Mobile No.</b></label>
+    <input type="text" name="mobile" [(ngModel)]="userInput.mobile" placeholder="Enter mobile no." id="mobileno" required>
+   
+    <input type="checkbox" checked="checked"> Remember me
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn" (click)="save()"> Sign Up</button>
+     <!-- <a [routerLink]="['/SignupSuccess']">Sign Up</a> -->
+    </div>
+  </div>
+</form>
